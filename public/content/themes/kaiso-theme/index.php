@@ -17,10 +17,4 @@ $app->container['twig'] = function () {
 	return new Twig_Environment($loader);
 };
 
-$app->container['wp_query'] = function () {
-	global $wp_query;
-
-	return $wp_query;
-};
-
 $app->run();
