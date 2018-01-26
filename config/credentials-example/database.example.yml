@@ -1,0 +1,23 @@
+dev:
+  name: dev
+  user: dev
+  password: dev
+  host: localhost
+  grant_to: localhost
+  tbl_prefix: wp_
+
+staging:
+  name:
+  user:
+  password:
+  host:
+  grant_to: localhost
+  tbl_prefix: wp_
+
+production:
+  name:
+  user:
+  password:
+  host:
+  grant_to: localhost
+  tbl_prefix: wp_

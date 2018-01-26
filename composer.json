@@ -1,0 +1,46 @@
+{
+  "name": "tomodomoco/kaiso-example",
+  "description": "Example of a Kaiso project",
+  "type": "project",
+  "license": "BSD-3-Clause",
+  "config": {
+    "vendor-dir": "vendor/composer"
+  },
+  "authors": [
+    {
+      "name": "Chris Van Patten",
+      "email": "chris@tomodomo.co"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url" : "https://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url" : "https://github.com/TomodomoCo/kaiso"
+    }
+  ],
+  "require": {
+    "symfony/yaml": "~2.0",
+    "johnpbloch/wordpress": "^4.9",
+    "tomodomoco/kaiso": "dev-master",
+    "twig/twig": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "MyApp\\Controllers\\": [
+        "app/Controllers/"
+      ]
+    }
+  },
+  "extra": {
+    "wordpress-install-dir": "public/wp",
+    "installer-paths": {
+      "public/content/plugins/{$name}":    ["type:wordpress-plugin"],
+      "public/content/mu-plugins/{$name}": ["type:wordpress-muplugin"],
+      "public/content/themes/{$name}":     ["type:wordpress-theme"]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "vpmframe-wp",
+  "dependencies": {
+    "bower": "*",
+    "gulp": "*",
+    "gulper": "*",
+    "gulp-compass": "*",
+    "gulp-concat": "*",
+    "gulp-exec": "*",
+    "gulp-imagemin": "*",
+    "gulp-livereload": "*",
+    "gulp-cssnano": "*",
+    "gulp-plumber": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "main-bower-files": "*"
+  },
+  "scripts": {
+    "bower": "bower",
+    "gulp": "gulper"
+  }
+}

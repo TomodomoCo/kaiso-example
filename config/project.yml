@@ -1,0 +1,49 @@
+# Project information
+name: kaiso-example
+repo: git://github.com/username/projectname.git
+domain: kaiso-example.com
+
+# Access information
+deploy_user: deploy
+user: projectuser
+group: group
+access_users:
+  - deploy
+  - projectuser
+  - user1
+  - user2
+  - user3
+
+# Deploy alerts
+alerts:
+  slack:
+    room:
+    hook:
+
+# Should we create a folder/virtualhost at uploads.{site_domain}?
+uploads_dir: false
+
+# Deployment stages
+stage:
+  dev:
+    ip: 10.1.1.10
+    ports:
+      ssh: 22
+    user: vagrant
+    restrict: false
+  staging:
+    ip: 0.0.0.0
+    ports:
+      ssh: 22
+    user: deploy
+    branch: master
+    restrict:
+      user: vpm
+      password: keepout
+  production:
+    ip: 0.0.0.0
+    ports:
+      ssh: 22
+    user: deploy
+    branch: master
+    restrict: false
