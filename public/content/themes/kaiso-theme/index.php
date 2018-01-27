@@ -1,7 +1,4 @@
 <?php
-/**
- * This theme has its own front controller.
- */
 
 use \Tomodomo\Kaiso as App;
 
